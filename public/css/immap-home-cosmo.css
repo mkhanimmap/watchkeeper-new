@@ -1,0 +1,185 @@
+/* Account for fixed navbar */
+
+.header { width:100%; height:94px; background-color:#222222 }
+.headerinner { width:100%; height:94px; margin:0 auto;  }
+.oasislogo { width:220px; height:80px; float:left; margin:10px 0px 0px 50px; }
+.topbar
+{
+    min-width:670px;
+    float:left;
+    margin:20px 0px 0px 35px;
+    height:20px;
+    text-align:left;
+    font-family:Century Gothic, Helvetica, sans-serif;
+    font-size:40px;
+    font-style: italic;
+    font-weight: bold;
+    color: rgba(0,0,0,0.6);
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+.topbar a
+{ color:#49A33D; text-decoration:none; font-weight:bold;}
+
+.topbar a:hover
+{ color:#093; text-decoration:none;}
+
+#main {
+    margin:0px 0px 0px 0px;
+}
+/* Finesse the page header spacing */
+.page-header {
+  margin-bottom: 30px;
+}
+.page-header .lead {
+  margin-bottom: 10px;
+}
+
+.container .navbar-header,
+.container .navbar-collapse {
+  background-color: #222222;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.navbar {
+  margin-bottom: 0px;
+  font-size: 13px;
+}
+/* Always float the navbar header */
+.navbar-header {
+  background-color: #222222;
+  float: left;
+}
+
+/* Undo the collapsing navbar */
+.navbar-collapse {
+  background-color: #222222;
+  display: block !important;
+  height: auto !important;
+
+  padding-bottom: 0;
+  overflow: visible !important;
+}
+
+.navbar-toggle {
+  display: none;
+}
+.navbar-collapse {
+  background-color: #222222;
+  border-top: 0;
+}
+
+.navbar-brand {
+  float: left;
+  padding: 13.5px 15px;
+  font-size: 19px;
+  line-height: 21px;
+  height: 40px;
+}
+
+
+/* Always apply the floated nav */
+.navbar-nav {
+  background-color: #222222;
+  float: left;
+  margin: 0;
+}
+.navbar-nav > li {
+  background-color: #222222;
+  float: left;
+}
+.navbar-nav > li > a {
+  background-color: #222222;
+  padding: 15px;
+}
+
+
+/* Redeclare since we override the float above */
+.navbar-nav.navbar-right {
+  background-color: #222222;
+  float: right;
+}
+
+/* Undo custom dropdowns */
+.navbar .navbar-nav .open .dropdown-menu {
+  position: absolute;
+  float: left;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-width: 0 1px 1px;
+  border-radius: 0 0 4px 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  background-color: #ffffff;
+  border-color: transparent;
+}
+
+.navbar .navbar-nav .open .dropdown-menu > .active > a,
+.navbar .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > li > a:focus {
+  color: #ebebeb !important;
+  background-color: #149466 !important;
+}
+.navbar .navbar-nav .open .dropdown-menu > .active > a,
+.navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #ebebeb !important;
+  background-color: #149466 !important;
+  ooutline: 0 none;
+  text-decoration: none;
+}
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a,
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+  background-color: #222222 !important;
+}
+
+.chosen-container-single .chosen-search input {
+  color: black;
+}
+
+.form-control-dropdown {
+display: block;
+width: 100%;
+height: 17px;
+margin-bottom: 2px;
+padding: 4px 10px;
+font-size: 12px;
+line-height: 1.42857143;
+color: #2b3e50;
+background-color: #ffffff;
+background-image: none;
+border: 1px solid transparent;
+border-radius: 0;
+-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+#map-canvas {
+  width:100%;
+  height:300px;
+}
+#map-canvas img {
+    max-width: none;
+}
+
+gm-style .gm-style-iw, .gm-style .gm-style-iw a, .gm-style .gm-style-iw span, .gm-style .gm-style-iw label, .gm-style .gm-style-iw div {
+  color: black;
+}

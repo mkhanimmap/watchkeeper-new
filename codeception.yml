@@ -1,0 +1,33 @@
+paths:
+    tests: app/tests
+    log: app/tests/_log
+    data: app/tests/_data
+    helpers: /app/tests/_helpers
+settings:
+    bootstrap: _bootstrap.php
+    suite_class: \PHPUnit_Framework_TestSuite
+    colors: false
+    memory_limit: 1024M
+    log: true
+modules:
+    config:
+        Db:
+            dsn: ''
+            user: ''
+            password: ''
+            dump: app/tests/_data/dump.sql
+coverage:
+    enabled: false
+    whitelist:
+        include:
+            - app/*
+        exclude:
+            - app/commands/*
+            - app/database/*
+            - app/lang/*
+            - app/models/*
+            - app/tests/*
+    blacklist:
+        include:
+            - app/controllers/*
+        exclude:

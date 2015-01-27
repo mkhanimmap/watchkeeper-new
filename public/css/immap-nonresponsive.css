@@ -1,0 +1,19 @@
+body { min-width: 1000px; }
+/* Non-responsive overrides
+ *
+ * Utilitze the following CSS to disable the responsive-ness of the container,
+ * grid system, and navbar.
+ */
+
+/* Reset the container */
+.container {
+  width: 970px;
+  max-width: none !important;
+}
+
+.container .navbar-header,
+.container .navbar-collapse {
+  background-color: #4e5d6c;
+  margin-right: 0;
+  margin-left: 0;
+}
